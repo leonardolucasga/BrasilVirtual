@@ -16,17 +16,23 @@ figure,
 
 body {
     font-family: 'Abril Fatface', serif;
-    line-height: 1.6;
+    line-height: 2.6;
 }
-
+.logo{
+    width: 48px ;
+}
 header {
     display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 5px;
     font-size: 1rem;
-    background: linear-gradient(to top, #1C2755, #19641F, #E5DD4C);
+    /*background: linear-gradient(to top, #1C2755, #19641F, #E5DD4C); */
+    background: linear-gradient(to right, #000,#162443);
     color: white;
     text-align: center;
-    padding: 20px 0;
-    justify-content: space-around;
+    padding: 5px;
+   
 
 }
 
@@ -90,4 +96,9 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+main{
+ width: 100%;
+ margin: auto;
+    background-image: url(IMGs/7-de-setembro-independencia-do-brasil-7-de-setembro-dia-da-independencia-do-brasilindependencia_641008-55.jpg);
 }
