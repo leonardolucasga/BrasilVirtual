@@ -9,70 +9,53 @@
     }
 
     /*Querys*/
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1100px) {
         header {
             flex-direction: column;
             align-items: center;
-            text-align: center;
-            justify-content: space-between;
         }
-
-        .logo {
-            margin-top: 20px;
-            margin-bottom: 20px; 
-        
-
-        nav {
-            margin-top: 0;
-        }
-
-        .menu {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .menu li {
-            margin-right: 0;
-            margin-bottom: 10px; 
-        }
-    }}
-
-    @media only screen and (max-width: 768px) {
-        header{
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: space-between;
-            
-        }
-
-    }
-    @media only screen and (min-width: 769px) and (max-width: 979px) {
-        
-    }
-
-
-    @media only screen and (min-width: 980px) and (max-width: 1199px) {
     
-    }
-
-
-    @media only screen and (min-width: 980px) and (max-width: 1199px) {
-        
-    }
-    @media only screen and (min-width: 1200px) and (max-width: 1919px) {
-
-        
-    }
-
-    @media screen and (max-width: 1920px) {
-        header{
-            align-items: center;
+        .menu {
             text-align: center;
-            justify-content: space-between;
+            margin-top: 10px;
+        }
+    
+        .menu li {
+            display: block;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    
+        .logo {
+            margin-top: 10px;
+        }
+    
+        main {
+            padding: 20px;
+        }
+    
+        #subtitle {
+            padding: 20px;
+            font-size: 2rem; /* Ajuste o tamanho da fonte para telas menores */
+        }
+    
+        .sobre {
+            padding: 20px;
+            font-size: 1.5rem; /* Ajuste o tamanho da fonte para telas menores */
+        }
+    
+        footer {
+            padding: 10px 20px;
+            margin-top: 20px; /* Ajuste conforme necessário */
+        }
+    
+        .footer-left,
+        .footer-right {
+            flex: 1 1 100%;
+            margin-bottom: 10px;
         }
     }
-
+    
 
     body {
         
@@ -88,7 +71,7 @@
         justify-content: space-around;
         align-items: center;
         
-        font-size: 1rem;
+        font-size: 2rem;
         /*background: linear-gradient(to top, #1C2755, #19641F, #E5DD4C); */
         background: linear-gradient(to right,#E5DD4C,#19641F,#054ff0);
         
@@ -112,7 +95,7 @@
     }
 
     .menu li {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
         display: inline-block;
         margin-right: 20px;
     }
@@ -130,7 +113,7 @@
         text-align: center;
         font-family: 'Abril Fatface', serif;
         color:#000;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         padding: 40px;
 
         
@@ -139,21 +122,24 @@
         color: #ffffff;
         font-family: 'Dancing Script', cursive;
         font-size: 3rem;
-        padding: 40px;
+        padding: 80px;
+        
         background-image: url(IMGs/quadro-negro-vazio.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: local;
         background-size: cover;
-        height: 100vh;
+        height: vh;
+
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        
     }
-    #imperadorimg{
-        max-width: 300px;
-        width: 100%;
-    }
+   
 
     .sobre{
-        font-size: 1.2em;
+        font-size: 2rem;
         padding: 40px;
     }
 
@@ -161,31 +147,40 @@
 
 
     /*Rodapé*/
-
     footer {
-    
+        color: #ffffff;
+        font-size: 1.5rem;
         width: 100%;
         background-color: #000;
-        padding: 50px 40px;
-        
+        padding: 20px 40px;
+        box-sizing: border-box; /* Garante que o padding não afete a largura total */
+    
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 20px 60px;
+        align-items: flex-end; /* Alinha os itens ao final do container */
+        margin-top: 380px;
     }
-
-
+    
+    .footer-left {
+        flex: 1; /* A primeira coluna ocupa o máximo de espaço possível */
+    }
+    
+    .footer-right {
+        flex: 0 0 auto; /* A segunda coluna tem uma largura automática e não cresce além do conteúdo */
+        display: flex;
+        gap: 20px;
+    }
+    
     footer a {
         color: #fff;
         text-decoration: none;
-        
     }
-
+    
     footer a:hover {
         text-decoration: underline;
     }
-
-
+    
 
 
 
